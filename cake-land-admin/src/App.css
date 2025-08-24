@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+body{
+  font-family: 'Baloo Tammudu 2'; 
+  background-image: linear-gradient(to right,#9796f0,#fbc7d4);
+  overflow: hidden;
+  overflow-y: unset;
+  align-items: center;
+  justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.app{
+  
+  background-image: linear-gradient(to right,#9796f0,#fbc7d4);
+  /* padding: 20px 60px;  */
+  
+/* #00dbde */
+
+}
+
+.containers{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+
+  
+}
+
+.home-page{
+   height: auto;
+   width: 90%; 
+}
+
+.table{
+  background:transparent;
+  background-image: none;
+}
+.see-table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  height: auto;
+  width: 77%;
+
+  margin-bottom: 40px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.holder {
+  position: relative;
+  /* overflow-x: hidden; */
+}
+.holder:before,
+.holder:after {
+  animation: orbit 7s linear infinite;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  content: '';
+  height: 350px;
+  position: absolute;
+  width: 350px;
+}
+
+.holder:before {
+  background: #ffe897;
+  background: -moz-radial-gradient(top right, #ad5389, #3c1053);
+  background: radial-gradient(to bottom left, #ad5389, #3c1053);
+  background: -webkit-radial-gradient(top right, #ad5389, #3c1053);
+  right: 0;
+  top: 2;
+  z-index: -1;
+}
+
+.holder:after {
+  animation-delay: 1.5s;
+  background: #e0e793;
+  background: -moz-radial-gradient(bottom right,#c6ffdd,#fbd786,#f7797d);
+  background: radial-gradient(to top left, #c6ffdd,#fbd786,#f7797d);
+  background: -webkit-radial-gradient(bottom right, #c6ffdd,#fbd786,#f7797d);
+  left: 1;
+  top: 0;
+  z-index: -1;
+}
+
+
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(300px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(300px) rotate(-360deg);
+  }
+}
+
+.card{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: none;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  position: sticky;
+
+
+}
+
+.sign-up-form{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 4%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.sign-up{
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+
+  
+  
+
+}
+
+
+.title{
+  font-size: 32px;
+}
+
+
+.group {
+  position: relative;
+  background: transparent;
+  margin: 15px 0;
+
+  
+
+  
+}
+
+
+.form-input {
+  background: none;
+  color: black;
+  font-size: 18px;
+  padding: 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid gray;
+  margin: 5px 0;
+
+  
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input:focus ~ .form-input-label {
+  top: -14px;
+  font-size: 12px;
+  color: black;
+}
+
+input[type='password'] {
+  letter-spacing: 0.3em;
+}
+
+.form-input-label {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+
+  
+}
+
+.shrink {
+  top: -14px;
+  font-size: 12px;
+  color: black;
+}
+
+
+
+.check{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
