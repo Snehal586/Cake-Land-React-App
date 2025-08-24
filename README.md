@@ -16,7 +16,7 @@ A real-time online bakery website where users can browse products, place orders,
 
 <img width="638" height="342" alt="Screenshot 2025-08-24 151416" src="https://github.com/user-attachments/assets/4c3bab27-3a37-4f34-8aa9-577c2dd8cb14" />
 
-# 🛠️ Technology Used
+# Technology Used
 
 Frontend: HTML, CSS, JavaScript, React.js
 
